@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OffShift</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- offline bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <!-- add css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- swiffy slider bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- fonts import -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hanunoo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body class="mx-auto">
+    <div id="navbar"></div>
+    <div class="banner d-flex align-items-center justify-content-center">
+      <div class="banner-text ms-5">
+        <h1 class="banner-heading">
+          Thrive in the World of Freelance Excellence Marketplace!
+        </h1>
+        <p class="banner-description mt-4">
+          Flourish in a thriving freelance ecosystem dedicated to excellence and
+          limitless opportunities.
+        </p>
+      </div>
+      <div class="banner-image">
+        <img class="banner-img" src="/images/woman.png" alt="" />
+      </div>
+    </div>
+
+    <div id="stats" class="stats row text-center mt-5 p-3 ">
+      <div class="stat-1 col-3">
+        <h1>2M+</h1>
+        <p>Jobs Available</p>
+      </div>
+      <div class="stat-2 col-3">
+        <h1>150K+</h1>
+        <p>New Jobs This Week</p>
+      </div>
+      <div class="stat-3 col-3">
+        <h1>200K+</h1>
+        <p>Companies Actively Hiring</p>
+      </div>
+      <div class="stat-4 col-3">
+        <h1>6M+</h1>
+        <p>Total Freelancers</p>
+      </div>
+    </div>
+
+    <h1 class="text-center browse-jobs mt-4 ">Browse jobs on categories</h1>
+    <div class="categories mt-3 row gap-5">
+      <div id="category" class="pt-5 gap-4 col-8">
+        <div class="card" style="width: 13rem">
+          <a id="all-jobs" href="index.html" style="text-decoration: none;width: 13rem; color: white"
+                >
+          <div class="card-body all-jobs" id="category-body">
+            <h5> All Jobs </h5>
+          </div>
+        </a>
+        </div>
+      </div>
+
+      <div class="dropdown ms-auto mt-5 col-3 ">
+        <button class="d-block mt-1 p-2 ms-auto me-5"
+          class="dropdown-toggle mt-4 p-2"
+          id="dropdown"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-filter p-2"></i>Sort By Budget <i class="fa-solid fa-angle-down px-2"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" onclick="joblist('','budget')">
+            Low to High
+          </li>
+          <li class="dropdown-item" onclick="joblist('','-budget')">
+            High to Low
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="work mt-5 ">
+      <div id="job" class="row"></div>
+    </div>
+
+    <div class="additional-choice mt-5 d-flex justify-content-around">
+      <div class="additional-text p-5">
+        <h2>Embrace Your Independence</h2>
+        <h2>Start Your Freelancing Journey Today!</h2>
+        <p>Connect with the world through your work</p>
+        <a href="./registration_login.html" class="btn join-btn">Join today</a>
+      </div>
+      <div class="additional-img">
+        <img src="./images/man.png" class="man-index" alt="">
+      </div>
+    </div>
+
+    <div id="faq" class="client-faq text-center mt-5">
+      <div class="client-head">
+        <h1 class="fw-bold">Frequently Asked Question</h1>
+        <p class="client-des w-50 mx-auto my-4 pb-3">
+          Find answers to your questions instantly. Need more guidance? Dive
+          into our extensive documentation for all your queries.
+        </p>
+      </div>
+      <div class="client-exp row mt-5">
+        <div class="client-img col-6">
+          <img class="faq" src="/images/questions_re.png" alt="" />
+        </div>
+        <div class="accordion col-6" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                What is OffShift?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                OFfshift is an online outsourcing platform that puts clients
+                and businesses in contact with a global network of freelancers.
+                Any member can post a project, whether a short- or long-term
+                job, and choose from skilled freelancers who offer bid proposals
+                with rate quotes and time estimates for completing the work.
+                It's a mutually beneficial arrangement.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How does OffShift work for clients?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Offshift provides a convenient and safe environment for
+                service buyers (clients) and skilled workers (freelancers)
+                around the world to conduct business. You can use the site to
+                look for professional freelancers who can deliver the work you
+                require, whether it be a short-term or long-term project.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                How do I rate and write a review for a Freelancer?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                After a project is completed and the freelancer is paid the full
+                amount of his or her winning bid , the feedback system for that
+                project will become available. You will be automatically
+                redirected to the feedback form once you mark your project as
+                completed.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                How do I get started as a freelancer?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Sign up, complete your profile, and start browsing projects.
+                Submit proposals and communicate with clients to get hired.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                What kind of projects can I find?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Our marketplace offers a variety of projects across industries
+                like writing, design, programming, marketing, and more.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                How do I ensure payment security?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Use our secure payment system. Funds are held in escrow until
+                you complete the project and both parties are satisfied.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class=" index-footer bg-dark p-5 d-flex gap-5" id="footer">
+      <div class="footer-left row w-60">
+        <h5>Subscribe</h5>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <br> <br>
+
+        </div>
+        <br /><br />
+        <div class="footer-description mt-4 col-4">
+          <h5>About</h5>
+          <p style="line-height: 2">
+            About Us <br />
+            Become Seller <br />
+            Jobs on OffShift <br />
+            Pricing <br />
+            Terms of Service
+          </p>
+        </div>
+        <div class="footer-description mt-4 col-4">
+          <h5>Categories</h5>
+          <p style="line-height: 2">
+            Design & Creative <br />Development & IT <br />
+            Music & Audio <br />
+            Programming & Tech <br />
+            Digital Marketing <br />
+            Finance & Accounting <br />
+            Trending <br />
+            Lifestyle
+          </p>
+        </div>
+        <div class="footer-description mt-4 col-4">
+          <h5>Support</h5>
+          <p style="line-height: 2">
+            Help & Support <br />
+            FAQ OffShift <br />
+            Contact Us <br />
+            Services <br />
+            Terms of Service
+          </p>
+        </div>
+      </div>
+      <div class="footer-right ms-5 ps-5">
+        <h4 class="mt-4">OffShift</h4>
+        <br /><br />
+        <div class="right-description">
+          <p>Need Help?</p>
+          <h5>offshift@help.org</h5>
+          <p class="mt-3">Call Us</p>
+          <h5>+111-000-555</h5>
+
+          <div class="follow mt-5">
+            <p>Follow Us</p>
+
+            <i class="fa-brands fa-facebook fs-4"></i>
+            <i class="fa-brands fa-youtube fs-4 ms-3"></i>
+            <i class="fa-brands fa-instagram fs-4 ms-3"></i>
+            <i class="fa-brands fa-linkedin fs-4 ms-3"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+    <script src="auth.js"></script>
+    <script src="work.js"></script>
+    <script src="profile.js"></script>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </body>
+</html>

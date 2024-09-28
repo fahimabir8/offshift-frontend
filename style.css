@@ -1,0 +1,374 @@
+body{
+    max-width: 87.5rem;
+}
+#user-section{
+    list-style-type: none;
+    padding-right: 1.2rem;
+}
+.nav-item {
+    position: relative;
+  }
+  
+  .dropdown-hover {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0.125rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 0.625rem 0.5rem;
+    list-style-type: none;
+    width: 12.5rem;
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transform: translateY(15px);
+  }
+  
+  .dropdown-hover li {
+    padding: 0.625rem;
+  }
+  
+  .nav-item:hover .dropdown-hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .dropdown-hover li:hover {
+    background-color: #6DAFF6;
+  }
+
+.banner{
+    background-color: #026b6a;
+    height: 36rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+}
+
+.banner-heading{
+    font-family: "Noto Sans Hanunoo";
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+.banner-img{
+    width: 35rem;
+    margin-top: 1rem;
+}
+.man-index{
+    width:25rem;
+    height: 25rem;
+   
+}
+.banner-description{
+    font-size: 1.4rem;
+    color: #D3D5DC;
+}
+.stats h1{
+    font-size: 3rem;
+}
+.stats p{
+    font-size: 1.2rem;
+}
+.register-btn{
+    background-color: #04a09f;
+    color: white;
+}
+.register-btn:hover{
+    background-color: #4fc9c8;
+}
+.browse-jobs,.client-faq{
+    padding-top: 3rem;
+}
+.browse-jobs,.client-head h1,.proposal-head,.jobs-head,.profile-head,.review-head{
+    font-family: "Roboto" sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.reaction-btn {
+    border: none;
+    background-color: #387f7f;
+    cursor: pointer;
+    padding: 0.625rem 1rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    transition: background-color 0.3s;
+    margin-top: 3rem;
+}
+
+.reaction-btn:hover {
+    background-color: #50a4a1;
+}
+
+#job-btn{
+    background-color: #4fc9c8;
+    border: none;
+    color: black;
+}
+#category-btn{
+    background-color: #ddedec;
+    color: black;
+    border: none;
+}
+#dropdown{
+    background-color: #025959;
+    border:none;
+    color: rgb(255, 254, 254);
+}
+.dropdown-item:hover{
+    background-color: #6DAFF6;
+}
+.linker{
+    text-decoration: none;
+    color: black;
+}
+.faq{
+    width: 30rem;
+}
+footer{
+    color: white;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+.client-faq{
+    margin-bottom: 12.5rem;
+}
+footer p{
+    color: gray;
+}
+.foot{
+    position: relative;
+    bottom: 0;
+    background-color: #000000;
+    width: 100%;
+   
+}
+.details{
+    background-color: #e6f7f7;
+    height: 14rem;
+    padding: 2.5rem;
+    border-radius: 2rem;
+}
+#category-body {
+    background-color: #04b2b1 ;
+    color: white;
+}
+#category :hover{
+    cursor: pointer;
+}
+#category{
+    display: flex;
+    flex-wrap: wrap;
+}
+.job-card{
+    border-radius: 1.2rem;
+    transition: all .5s ease-out;
+}
+.skills{
+    width: 50%;
+}
+
+.job-card:hover,
+.job-card:active{
+    transform: translateY(-0.8rem);
+    box-shadow: 0.75rem 0.75rem 1.2rem rgba(0,0,0,0.085);
+}
+.client{
+    box-shadow: 0.25rem 0.25rem 0.5rem gray;
+    width: 20rem;
+    background-color: #1e6363;
+    color: white;
+    height: 22rem;
+    position:sticky;
+    top: 0;
+    border-radius: 40px;
+}
+.additional-choice{
+    background-color: #1dbab9;
+    color: white;
+    height: 25rem;
+    border-radius: 2rem;
+    align-items: center;
+    margin-top: 6rem;
+}
+.additional-choice h2{
+    font-size: 2.5rem;
+}
+.join-btn{
+    background-color:white;
+    color: #013535;
+    font-weight: 600;
+}
+.card{
+    transition: all 0.5s ease-out;
+}
+.card:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0.5rem 0.5rem 2.375rem rgba(0,0,0,0.1);
+}
+.project-overview{
+    margin-top: 5rem;
+}
+#propose-btn{
+    background-color: #013535;
+    border: none;
+    padding: 1.25rem;
+    font-size: 1rem;
+    border-radius: 1.9rem;
+    margin-top: 3rem;
+}
+.proposal-form{
+    width: 50%;
+    background-color: #82D9D8;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 2rem;
+}
+#love-btn:active{
+    display: solid ;
+}
+button.apply {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button.apply:hover {
+    background-color: #0056b3;
+    transform: translateY(-0.2rem);
+  }
+  
+  button.apply:active {
+    background-color: #004085;
+    transform: translateY(1.2rem);
+  }
+  
+#navbar li:hover{
+    cursor: pointer;
+}
+#profile-section{
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+    /* border: 1px solid; */
+    margin: 2rem;
+}
+.edit{
+    background-color: #037d7c;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.edit:hover,
+.edit:active{
+    background-color: #04a09f;
+}
+.edit-profile{
+    display: flex;
+    justify-content:end;
+    margin-right: 4rem;
+}
+.li-profile{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 4rem; */
+}
+
+.card-profile{
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: #b4e8e8;
+    height: 30rem;
+    align-items: center;
+}
+.about_me_profile{
+    border-radius: 2rem;
+    padding: 3rem;
+    background-color: #b4e8e8;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+.noColor{
+    margin-left: 3rem;
+}
+
+.about-txt{
+    font-size: 1.6rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 0.7rem;
+    margin: 0.8rem 0;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #04a09f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1dbab9;
+}
+
+.profile-new{
+    background-color: #e6f7f7;
+}
+.overview-section{
+    list-style: none;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    box-shadow: 0.2rem 0.3rem rgb(214, 212, 212);
+    background-color: #c5d0dc47;
+}
+.overview-section li{
+    padding: 0.18rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.data-list{
+    color: gray;
+}
+.overview-section li:hover {
+    background-color: #6daff6;    
+    cursor: pointer;
+}
+.user-details{
+    background-color: #6daff6;    
+
+}
+.color{
+    color: gray;
+    
+    .noColor{
+        color: black;
+        display: inline;
+    }
+}
